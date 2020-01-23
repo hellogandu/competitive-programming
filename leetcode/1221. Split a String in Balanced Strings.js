@@ -22,3 +22,30 @@
 // Input: s = "RLRRRLLRLL"
 // Output: 2
 // Explanation: s can be split into "RL", "RRRLLRLL", since each substring contains an equal number of 'L' and 'R'
+
+// /**
+//  * @param {string} s
+//  * @return {number}
+//  */
+var balancedStringSplit = function(s) {
+  let counter = 0;
+  let check = 0;
+  for(let i=0;i<s.length;i++){
+     if(s[i]=='L'){
+          check+=1;
+      }else{
+          check-=1;
+      }        
+     if( check==0){counter+=1;}
+  }
+  return counter;
+  // return s.split('').reduce((acc , cv) =>{
+  //     if(cv=='L'){
+  //         acc+=1;
+  //     }else{
+  //         acc -=1;
+  //     }        
+  //    if(acc ==0){counter+=1;}
+  //     return acc;
+  // },acc=0) | counter;
+};
