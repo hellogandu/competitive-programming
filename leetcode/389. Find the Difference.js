@@ -22,11 +22,12 @@
 //  */
 var findTheDifference = function(s, t) {
   let ans = 0;
-  for(let i=0;i<s.length;i++){
-      ans = ans ^ s[i].charCodeAt();
+  for (let i = 0; i < s.length; i++) {
+    ans = ans ^ s[i].charCodeAt();
   }
-   for(let i=0;i<t.length;i++){
-      ans = ans ^ t[i].charCodeAt();
+  for (let i = 0; i < t.length; i++) {
+    ans = ans ^ t[i].charCodeAt();
   }
   return String.fromCharCode(ans);
 };
+
