@@ -9,15 +9,14 @@ typedef pair<int , int> pi;
 #define MP make_pair
 #define loop(i,a,b) for (int i = a; i <= b; i++)
 
+void solve(){
+
+}
 
 int main(){
 ios::sync_with_stdio(0);
 cin.tie(0);
 
- #ifndef ONLINE_JUDGE
-freopen("input.txt", "r", stdin);
-freopen("output.txt", "w", stdout);
- #endif
-
+  solve()
  return 0
 }
