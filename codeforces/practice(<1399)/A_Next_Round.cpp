@@ -10,18 +10,18 @@ typedef pair<int , int> pi;
 #define loop(i,a,b) for (int i = a; i <= b; i++)
 
 void solve(){
-  int n;
-  cin >> n;
-  if (n == 2)
-  {
-    cout << "NO" << endl;
-    return;
+  int n,k, count = 0;
+  cin>>n>>k;
+  vector<int> v(n);
+  loop(i, 0,n-1){
+    cin>>v[i];
   }
-  if(n%2==0){
-    cout << "YES" << endl;
-  }else{
-    cout << "NO" << endl;
+ loop(i,0,n-1){
+    if(v[i] > 0 && v[i] >= v[k-1]){
+      count++;
+    }
   }
+  cout<<count<<endl;
 }
 
 int main(){
